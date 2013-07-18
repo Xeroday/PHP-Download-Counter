@@ -3,7 +3,7 @@ require_once('../config.php');
 $files = scandir(".");
 
 foreach ($files as $file) {
-	if (substr($file, -4) === ".txt") {
+	if (substr($file, -4) === ".log") {
 		if ($nixWithExec) {
 			$totalLines = intval(exec('wc -l ' . $file));
 		} else {
