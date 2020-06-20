@@ -15,3 +15,4 @@ Customization:
 - Change your default time zone in the config file
 - Change what client info is logged and formatted in the log file in the config file
 - If you want to secure your stats folder, you should either rename it (method above) or lock it with .htaccess
+- You can insert a password in the config file by inserting it as a SHA-1 into the variable 'passhash', then you can login only providing the password as a GET value "pass"
